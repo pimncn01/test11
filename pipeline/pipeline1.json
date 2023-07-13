@@ -15,9 +15,12 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/adf/mynotebook",
+					"notebookPath": "/Users/netchanok.m@cloudnatician.com/adf/mynotebook",
 					"baseParameters": {
-						"input": "@pipeline().parameters.name"
+						"input": {
+							"value": "@pipeline().parameters.name",
+							"type": "Expression"
+						}
 					}
 				},
 				"linkedServiceName": {
